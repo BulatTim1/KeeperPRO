@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="26aca3bcf4b04af382d7bf6e3caef078" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="KeeperPROModel.Client" Width="1.5" PointX="7.5" PointY="6.125" />
+        <EntityTypeShape EntityType="KeeperPROModel.Departament" Width="1.5" PointX="3" PointY="6" />
+        <EntityTypeShape EntityType="KeeperPROModel.Employer" Width="1.5" PointX="5.25" PointY="1.25" />
+        <EntityTypeShape EntityType="KeeperPROModel.Request" Width="1.5" PointX="7.5" PointY="1" />
+        <EntityTypeShape EntityType="KeeperPROModel.Request_Client" Width="1.5" PointX="9.75" PointY="2" />
+        <EntityTypeShape EntityType="KeeperPROModel.Role" Width="1.5" PointX="0.75" PointY="2.125" />
+        <EntityTypeShape EntityType="KeeperPROModel.Status" Width="1.5" PointX="5.25" PointY="6.125" />
+        <EntityTypeShape EntityType="KeeperPROModel.Subdivision" Width="1.5" PointX="3" PointY="9.375" />
+        <EntityTypeShape EntityType="KeeperPROModel.User" Width="1.5" PointX="3" PointY="1.375" />
+        <AssociationConnector Association="KeeperPROModel.FK_Request_Client_Client" />
+        <AssociationConnector Association="KeeperPROModel.FK_Employer_Departament" />
+        <AssociationConnector Association="KeeperPROModel.FK_Employer_Subdivision" />
+        <AssociationConnector Association="KeeperPROModel.FK_Employer_User" />
+        <AssociationConnector Association="KeeperPROModel.FK_Request_Employer" />
+        <AssociationConnector Association="KeeperPROModel.FK_Request_Client_Request" />
+        <AssociationConnector Association="KeeperPROModel.FK_Request_Status" />
+        <AssociationConnector Association="KeeperPROModel.FK_Request_User" />
+        <AssociationConnector Association="KeeperPROModel.FK_User_Role" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
