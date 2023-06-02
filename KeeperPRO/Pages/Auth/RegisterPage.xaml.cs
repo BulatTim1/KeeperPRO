@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -29,6 +30,11 @@ namespace KeeperPRO.Pages.Auth
 		private void RegisterClick(object sender, RoutedEventArgs e)
 		{
 			string message = "";
+			Regex emailRegex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+			if (!emailRegex.IsMatch(tbEmail.Text))
+			{
+				message += "Введите корректную почту.\n";
+			}
 			if (tbPass.Password.Length < 8)
 			{
 				message += "Пароль должен иметь как минимум 8 символов!\n";
@@ -68,6 +74,7 @@ namespace KeeperPRO.Pages.Auth
 				Email = tbEmail.Text,
 				EncPassword = encryptedPassword,
 				Login = tbEmail.Text.Split('@')[0],
+				RoleCode = 1	//костыль) мне лень в ssms ставить стандартное значение
 			};
 
 			try
