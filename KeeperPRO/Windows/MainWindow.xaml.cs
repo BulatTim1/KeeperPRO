@@ -39,7 +39,10 @@ namespace KeeperPRO.Windows
 		public void SetTitle(string title)
 		{
 			this.Title = title;
-			_basePage.SetBtnBack();
+			if (_basePage != null)
+			{
+				_basePage.SetBtnBack();
+			}
 		}
 	}
 }

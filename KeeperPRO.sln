@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeeperPRO", "KeeperPRO\KeeperPRO.csproj", "{776C84D4-24D0-40DB-97FD-10777D68DEB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegisterUnitCase", "RegisterUnitCase\RegisterUnitCase.csproj", "{C98D43D0-B91B-4603-882F-3E37876F7856}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{776C84D4-24D0-40DB-97FD-10777D68DEB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{776C84D4-24D0-40DB-97FD-10777D68DEB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{776C84D4-24D0-40DB-97FD-10777D68DEB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C98D43D0-B91B-4603-882F-3E37876F7856}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C98D43D0-B91B-4603-882F-3E37876F7856}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C98D43D0-B91B-4603-882F-3E37876F7856}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C98D43D0-B91B-4603-882F-3E37876F7856}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
